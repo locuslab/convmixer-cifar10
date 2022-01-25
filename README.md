@@ -51,6 +51,6 @@ python train.py --lr-max=0.05 --ra-n=2 --ra-m=12 --wd=0.005 --scale=1.0 --jitter
 ```
 
 
-Note that this script is not intended to perfectly replicate the results in our paper, as PyTorch's built-in data augmentation methods (for RandAugment and Random Erasing in particular) differ slightly from those of the library we used, [pytorch-image-models](github.com/rwightman/pytorch-image-models). This script also does not include Mixup/Cutmix, as these are not provided by PyTorch (torchvision.transforms) and we wanted to keep it as simple as possible. That said, you can probably get similar results by experimenting with different amounts of regularization with this script.
+Note that this script is not intended to perfectly replicate the results in our paper, as PyTorch's built-in data augmentation methods (for RandAugment and Random Erasing in particular) differ slightly from those of the library we used, [pytorch-image-models](https://github.com/rwightman/pytorch-image-models). This script also does not include Mixup/Cutmix, as these are not provided by PyTorch (torchvision.transforms) and we wanted to keep it as simple as possible. That said, you can probably get similar results by experimenting with different amounts of regularization with this script.
 
 Feel free to open an issue if you have any questions.
