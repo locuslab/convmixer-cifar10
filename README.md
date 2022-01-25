@@ -1,4 +1,4 @@
-Try ConvMixer on CIFAR-10
+Train ConvMixer on CIFAR-10
 -----------------------------------
  ✈️ 🚗 🐦 🐈 🦌 🐕 🐸 🐎 🚢 🚚
  
