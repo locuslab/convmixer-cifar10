@@ -5,6 +5,8 @@ Try ConvMixer on CIFAR-10
 
 This is a simple ConvMixer training script for CIFAR-10. It's probably a good starting point for new experiments on small datasets.
 
+For training on ImageNet and/or reproducing our original results, see the [main ConvMixer repo](https://github.com/locuslab/convmixer).
+
 You can get around **92.5%** accuracy in just **25 epochs** by running the script with the following arguments,
 which trains a ConvMixer-256/8 with kernel size 5 and patch size 2.
 
@@ -42,7 +44,7 @@ Here's an example of the output of the above command (on a 2080Ti GPU):
 [ConvMixer] Epoch: 24 | Train Acc: 0.9441, Test Acc: 0.9260, Time: 42.6, lr: 0.000000
 ```
 
-By adding more regularization (data augmentation) and training for longer, you can get more than 94% accuracy:
+By adding more regularization (data augmentation) and training for four times longer, you can get **more than 94% accuracy**:
 
 ```
 python train.py --lr-max=0.05 --ra-n=2 --ra-m=12 --wd=0.005 --scale=1.0 --jitter=0.2 --reprob=0.2 --epochs=100
